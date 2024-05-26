@@ -25,12 +25,12 @@ export const Header = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center items-center gap-10 flex-col md:flex-row">
-          <button className="bg-yellow-400 rounded-half  pl-10 pr-10 pt-1 pb-1 rounded-2xl ">
-            For academies
+        <div className="flex justify-center items-center gap-10 flex-col md:flex-row text-white font-bold">
+          <button className="bg-yellow-400 rounded-half  px-20 py-3 md:px-10 md:py-1 rounded-2xl ">
+            For Academies
           </button>
-          <button className="bg-yellow-400 rounded-half  pl-10 pr-10 pt-1 pb-1 rounded-2xl ">
-            sportArts in Home
+          <button className="bg-yellow-400 rounded-half  px-20 py-3 md:px-10 md:py-1 rounded-2xl ">
+            SpArts in Home
           </button>
         </div>
       </div>

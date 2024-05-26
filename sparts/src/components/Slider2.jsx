@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export const Slider = () => {
+export const SliderTestimonial = () => {
   const [startIndex, setStartIndex] = useState(0);
   const [cardsPerView, setCardsPerView] = useState(getCardsPerView());
   const [data, setData] = useState([]);
@@ -8,7 +8,7 @@ export const Slider = () => {
 
   function fetchData() {
     setLoading(true);
-    fetch("https://mock-jsonserver.onrender.com/academies")
+    fetch("https://mock-jsonserver.onrender.com/comments")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -54,12 +54,12 @@ export const Slider = () => {
   }
 
   return (
-    <div className="flex items-center justify-center md:ml-16  w-[95%] h-full   ">
+    <div className="flex items-center justify-start md:ml-16 m-auto   w-[95%] h-full">
       <div className="absolute left-5 z-10">
         <button
           onClick={handlePrevClick}
           disabled={startIndex === 0}
-          className={`bg-yellow-300 w-10 h-10  rounded-full ${
+          className={`bg-yellow-300 w-10 h-10 p-2 rounded-full ${
             startIndex === 0 ? "opacity-50" : ""
           }`}
           style={{ cursor: startIndex === 0 ? "not-allowed" : "pointer" }}
@@ -68,7 +68,7 @@ export const Slider = () => {
         </button>
       </div>
 
-      <div className="flex overflow-hidden  w-full">
+      <div className="flex overflow-hidden w-full">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
@@ -80,7 +80,7 @@ export const Slider = () => {
             : data.map((card) => (
                 <div
                   key={card.id}
-                  className={`flex-none p-1 bg-blue-200 md:m-1 rounded ${
+                  className={` relative rounded-xl flex-none p-1 md:m-1 h-full bg-blue-200  ${
                     cardsPerView === 4
                       ? "w-1/4"
                       : cardsPerView === 3
@@ -88,13 +88,20 @@ export const Slider = () => {
                       : "w-1/2"
                   }`}
                 >
-                  <img src={card.image} alt="" className="w-full" />
                   <p className="font-bold">{card.name}</p>
+                  <p>{card.comment}</p>
+                  <div className="absolute w-10 h-10 rounded-full overflow-hidden bottom-0 right-0">
+                    <img
+                      src={card.image}
+                      alt=""
+                      className="w-full h-full object-cover"
+                      style={{ borderRadius: "50%" }}
+                    />
+                  </div>
                 </div>
               ))}
         </div>
       </div>
-
       <div className="absolute right-5">
         <button
           onClick={handleNextClick}
