@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Loader } from "./Loader";
+
 
 export const Slider = () => {
   const [startIndex, setStartIndex] = useState(0);
@@ -54,6 +56,7 @@ export const Slider = () => {
   }
 
   return (
+    <div>{loading?<Loader/>:(
     <div className="flex items-center justify-center md:ml-16  w-[95%] h-full   ">
       <div className="absolute left-5 z-10">
         <button
@@ -75,9 +78,7 @@ export const Slider = () => {
             transform: `translateX(-${startIndex * (100 / cardsPerView)}%)`,
           }}
         >
-          {loading
-            ? "Loading"
-            : data.map((card) => (
+          { data.map((card) => (
                 <div
                   key={card.id}
                   className={`flex-none p-1 bg-blue-200 md:m-1 rounded ${
@@ -112,6 +113,9 @@ export const Slider = () => {
           &gt;
         </button>
       </div>
+    </div>
+    )}
+    
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import { MdNavigateNext } from "react-icons/md";
+import "../App.css"
 
 export const Header = () => {
   
@@ -10,7 +11,7 @@ export const Header = () => {
         <div className="  flex  justify-evenly items-center flex-col md:flex-row  ">
           <div className="  flex items-end">
             <h1
-              className="flex text-3xl text-start flex-col md:text-4xl   mt-20"
+              className="flex text-3xl text-start flex-col md:text-4xl   mt-20 animation"
               style={{ lineHeight: "40px" }}
             >
               Find the Best <span>
@@ -27,7 +28,7 @@ export const Header = () => {
               <MdNavigateNext className="w-full " />
             </div> */}
           </div>
-          <div className="  flex justify-center items-center">
+          <div className="  flex justify-center items-center animationRight">
             <img
               src="https://www.shutterstock.com/image-vector/happy-kids-read-book-study-600nw-1497902633.jpg"
               alt="image"
@@ -36,10 +37,10 @@ export const Header = () => {
           </div>
         </div>
         <div className="flex justify-center items-center gap-10 flex-col md:flex-row text-white font-bold">
-          <button className="bg-yellow-400 rounded-half  px-20 py-3 md:px-10 md:py-1 rounded-2xl ">
+          <button className="bg-yellow-400 rounded-half  px-20 py-3 md:px-10 md:py-1 rounded-2xl buttonAnimation ">
             For Academies
           </button>
-          <button className="bg-yellow-400 rounded-half  px-20 py-3 md:px-10 md:py-1 rounded-2xl ">
+          <button className="bg-yellow-400 rounded-half  px-20 py-3 md:px-10 md:py-1 rounded-2xl animationRight">
             SpArts in Home
           </button>
         </div>

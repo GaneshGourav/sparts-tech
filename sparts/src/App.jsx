@@ -6,6 +6,7 @@ import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Academies } from './Page/Acadimies'
 import { Testomonial } from './Page/Testimonials'
+import { Loader } from './components/Loader'
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
        <Academies/>
        <Testomonial/>
         <Footer/>
+       
       </div>
     </>
   )
