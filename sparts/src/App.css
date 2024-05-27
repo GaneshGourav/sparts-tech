@@ -1,7 +1,9 @@
 .animation{
     animation:moveInLeft 1.75s ease-in-out;
 }
-
+body{
+    overflow-x: hidden;
+}
    
 @keyframes moveInLeft {
     0% {
