@@ -80,7 +80,7 @@ export const SliderTestimonial = () => {
             : data.map((card) => (
                 <div
                   key={card.id}
-                  className={` relative rounded-xl flex-none p-1 md:m-1 h-full bg-blue-200  ${
+                  className={` relative rounded-xl flex-none p-1 w-1/2 md:m-1 h-full bg-blue-200  ${
                     cardsPerView === 4
                       ? "w-1/4"
                       : cardsPerView === 3

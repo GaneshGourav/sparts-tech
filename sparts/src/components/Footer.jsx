@@ -12,13 +12,13 @@ export const Footer = () => {
             Get the latest update on academies near you!{" "}
           </p>
         </div>
-        <div className="flex  justify-center items-center gap-5 mt-16">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-16">
           <input
             type="email"
             placeholder="E-mail"
-            className="pl-2 rounded-lg pt-1 pb-1 "
+            className="pl-2 rounded-lg pt-1 pb-1 md:w-[250px] w-[300px]"
           />
-          <button className="pl-6 pr-6 pt-1 pb-1 bg-sky-500 rounded-lg text-white">
+          <button className="pl-6 pr-6 pt-1 pb-1 bg-sky-500 rounded-lg w-[300px] md:w-[200px] text-white">
             Subscribe
           </button>
         </div>

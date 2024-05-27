@@ -2,26 +2,36 @@ import React from "react";
 import { MdNavigateNext } from "react-icons/md";
 
 export const Header = () => {
+  
   return (
     <>
-      <div className="pb-8">
+      <div className="pb-8"> 
+
         <div className="  flex  justify-evenly items-center flex-col md:flex-row  ">
           <div className="  flex items-end">
             <h1
-              className="text-4xl text-left font-medium"
-              style={{ lineHeight: "60px" }}
+              className="flex text-3xl text-start flex-col md:text-4xl   mt-20"
+              style={{ lineHeight: "40px" }}
             >
-              Find the Best <br /> Activity For your <br /> Child!
-            </h1>
-            <div className=" w-8 h-8 rounded-full bg-sky-300 flex items-center justify-center mb-2 ">
+              Find the Best <span>
+           Activity For your </span> 
+           <span className="flex justify-between items-center">
+           Child!
+           <div className=" w-10 h-10 rounded-full bg-sky-300 flex items-center justify-center mb-2 mt-5 ">
               <MdNavigateNext className="w-full " />
             </div>
+           </span>
+           
+            </h1>
+            {/* <div className=" w-8 h-8 rounded-full bg-sky-300 flex items-center justify-center mb-2 ">
+              <MdNavigateNext className="w-full " />
+            </div> */}
           </div>
           <div className="  flex justify-center items-center">
             <img
-              src="https://img.freepik.com/free-vector/privacy-policy-concept-illustration_114360-7853.jpg?size=626&ext=jpg&ga=GA1.1.784249210.1705073781&semt=sph"
+              src="https://www.shutterstock.com/image-vector/happy-kids-read-book-study-600nw-1497902633.jpg"
               alt="image"
-              className="w-[70%]"
+              className="w-[70%] bg-white"
             />
           </div>
         </div>
