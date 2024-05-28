@@ -93,7 +93,7 @@ export const Slider = () => {
             </button>
           </div>
 
-          <div className="flex overflow-hidden w-[410px] md:w-full m-auto  ">
+          <div className="flex overflow-hidden w-[400px] md:w-full m-auto  ">
             <div
               className="flex md:py-3 md:pr-8  w-full transition-transform duration-500 ease-in-out"
               style={{
@@ -103,7 +103,7 @@ export const Slider = () => {
               {data.map((card) => (
                 <div
                   key={card.id}
-                  className={`flex-none p-1 bg-blue-200 md:m-1 rounded transform transition duration-300 hover:-translate-y-4 ${
+                  className={`flex-none p-1 bg-blue-200 md:m-1 rounded-lg transform transition duration-300 hover:-translate-y-4 ${
                     cardsPerView === 4
                       ? "w-1/4"
                       : cardsPerView === 3
@@ -111,7 +111,7 @@ export const Slider = () => {
                       : "w-full"
                   }`}
                 >
-                  <img src={card.image} alt="" className="w-full" />
+                  <img src={card.image} alt="" className="w-full rounded-lg " />
                   <p className="font-bold">{card.name}</p>
                 </div>
               ))}

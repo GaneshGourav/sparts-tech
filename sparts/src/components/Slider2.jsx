@@ -94,7 +94,7 @@ export const SliderTestimonial = () => {
             </button>
           </div>
           {/* Each Card strucutre */}
-          <div className="flex overflow-hidden w-[410px] md:w-full m-auto ">
+          <div className="flex overflow-hidden w-[390px] md:w-full m-auto ">
             <div
               className="  flex md:py-3 md:pr-8  w-full transition-transform duration-500 ease-in-out"
               style={{
