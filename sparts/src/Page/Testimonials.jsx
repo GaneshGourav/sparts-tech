@@ -2,7 +2,6 @@ import React from "react";
 // import { Slider } from "../Components/Slider";
 import { SliderTestimonial } from "../components/Slider2";
 
-
 export const Testomonial = () => {
   return (
     <>
@@ -17,7 +16,6 @@ export const Testomonial = () => {
         <div className="flex justify-start mt-5">
           <SliderTestimonial />
         </div>
-     
       </div>
     </>
   );

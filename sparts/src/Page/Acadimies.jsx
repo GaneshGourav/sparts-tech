@@ -1,6 +1,6 @@
 import React from "react";
 import { Slider } from "../components/Slider1";
-import "../App.css"
+import "../App.css";
 
 export const Academies = () => {
   return (

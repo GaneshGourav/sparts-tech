@@ -104,7 +104,7 @@ export const SliderTestimonial = () => {
               {data.map((card) => (
                 <div
                   key={card.id}
-                  className={` rounded-lg border border-blue-600 flex-none p-5 h-[200px] w-1/2   md:m-1  bg-blue-200  transform transition duration-300 hover:-translate-y-2 ${
+                  className={` rounded-lg  flex-none p-5 h-[200px] w-1/2   md:m-1  bg-blue-200  transform transition duration-300 hover:-translate-y-2 ${
                     cardsPerView === 4
                       ? "w-1/4"
                       : cardsPerView === 3

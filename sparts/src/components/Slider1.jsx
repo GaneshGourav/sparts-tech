@@ -93,7 +93,7 @@ export const Slider = () => {
             </button>
           </div>
 
-          <div className="flex overflow-hidden w-[400px] md:w-full m-auto  ">
+          <div className="flex overflow-hidden w-[410px] md:w-full m-auto  ">
             <div
               className="flex md:py-3 md:pr-8  w-full transition-transform duration-500 ease-in-out"
               style={{
