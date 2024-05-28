@@ -18,7 +18,7 @@ export const Footer = () => {
             placeholder="E-mail"
             className="pl-2 rounded-lg pt-1 pb-1 md:w-[250px] w-[300px]"
           />
-          <button className="pl-6 pr-6 pt-1 pb-1 bg-sky-500 rounded-lg w-[300px] md:w-[200px] text-white">
+          <button className="px-6 py-2 bg-sky-500 rounded-lg w-[300px] md:w-[200px] text-white hover:bg-sky-600 transition-colors duration-300">
             Subscribe
           </button>
         </div>
